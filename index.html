@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap">
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="app.js"></script>
+  <title>Twitter clone</title>
+</head>
+<body class="light-theme">
+  
+  <!-- ASIDE START -->
+  <aside>
+    <header>
+      <sidebar-logo class="default"></sidebar-logo>
+      <sidebar-moon class="default"></sidebar-moon>
+    </header>
+
+    <section>
+      <!-- Sidebar -->
+      <sidebar-home class="default"></sidebar-home>
+      <sidebar-explore class="default"></sidebar-explore>
+      <sidebar-notification class="default"></sidebar-notification>
+      <sidebar-bookmarks class="default"></sidebar-bookmarks>
+      <sidebar-lists class="default"></sidebar-lists>
+      <sidebar-profile class="default"></sidebar-profile>
+      <sidebar-more class="default"></sidebar-more>
+    </section>
+
+    <!-- Dropdown Items -->
+    <div id="dropdownItems" class="default">
+      <dropdown-topics class="default"></dropdown-topics>
+      <dropdown-news class="default"></dropdown-news>
+      <dropdown-spaces class="default"></dropdown-spaces>
+      <dropdown-ads class="default"></dropdown-ads>
+      <dropdown-analytics class="default"></dropdown-analytics>
+      <horizontal-border class="default"></horizontal-border>
+      <dropdown-settings class="default"></dropdown-settings>
+      <dropdown-help class="default"></dropdown-help>
+      <dropdown-display class="default"></dropdown-display>
+      <dropdown-shortcuts class="default"></dropdown-shortcuts>
+    </div>
+
+    <primary-button label="Tweet" class="default large"></primary-button>
+    
+    <footer>
+      
+      <!-- Sidebar Username -->
+      <sidebar-username
+      image="./images/profile.png"
+      username="Quentin"
+      account="@quentin21" 
+      class="default"
+      ></sidebar-username>
+
+      <!-- Dropdown Username -->
+      <div id="dropdownUsername" class="default">
+        <dropdown-username
+          image="./images/profile.png"
+          username="Quentin"
+          account="@quentin21" 
+          class="default"
+        ></dropdown-username>
+
+        <horizontal-border class="default"></horizontal-border>
+
+        <dropdown-text 
+          label="Agregar nueva cuenta"
+          class="default"
+        ></dropdown-text>
+
+        <dropdown-text 
+          label="Cerrar sesión @quentin21"
+          class="default"
+        ></dropdown-text>
+      </div>
+
+    </footer>
+  </aside>
+  <!-- ASIDE END -->
+
+  <!-- VERTICAL BORDER START -->
+  <vertical-border class="default"></vertical-border>
+  <!-- VERTICAL BORDER END -->
+
+  <!-- MAIN START -->
+  <main>
+    <!-- Home Header start -->
+    <div id="home">
+      <div>
+        <type-style
+          class="size-20px bold default"
+          label="Home"
+        ></type-style>
+        <star-icon class="default"></star-icon>
+      </div>
+
+      <div>
+        <img
+          class="image-style"
+          src="./Images/profile.png"
+        >
+        <type-style
+          class="size-20px regular default gray"
+          label="What is happening?"
+        ></type-style>
+      </div>
+
+      <div>
+        <div>
+          <picture class="default"></picture>
+          <gif-icon class="default"></gif-icon>
+          <barchart-icon class="default"></barchart-icon>
+          <smile-icon class="default"></smile-icon>
+          <calendar-icon class="default"></calendar-icon>
+          <location-icon class="default"></location-icon>
+        </div>
+        <primary-button
+          label="Tweet"
+          class="default regular"
+        ></primary-button>
+      </div>
+    </div>
+    <!-- Home Header end -->
+
+    <!-- Tweet Card start -->
+    <div id="tweet"><!-- TweetCardMap --></div>
+    <!-- Tweet Card End -->
+  </main>
+  <!-- MAIN END -->
+
+  <!-- VERTICAL BORDER START -->
+  <vertical-border class="default"></vertical-border>
+  <!-- VERTICAL BORDER END -->
+
+  <!-- ARTICLE START -->
+  <article>
+    
+    <!-- Who to follow -->
+    <type-style class="size-20px bold default" label="¿A quién seguir?"></type-style>
+    <div class="follow-info"></div>
+    <!-- News Feed -->
+    <type-style class="size-20px bold default" label="Noticias"></type-style>
+    <div class="trending-info"></div>
+    
+  </article>
+  <!-- ARTICLE END -->
+  
+</body>
+</html>

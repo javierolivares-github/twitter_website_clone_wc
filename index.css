@@ -1,0 +1,26 @@
+@import './CSS/Colors.css';
+@import './CSS/Reset.css';
+@import './CSS/Layout.css';
+@import './CSS/Aside.css';
+@import './CSS/SwitchTheme.css';
+@import './CSS/Newsfeed.css';
+@import './CSS/ScrollReset.css';
+@import './CSS/Home.css';
+@import './CSS/Image.css';
+@import './CSS/Tweet.css';
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
